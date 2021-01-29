@@ -1,4 +1,6 @@
+import 'package:caracoroa/Resultado.dart';
 import 'package:flutter/material.dart';
+import 'Resultado.dart';
 
 class Game extends StatefulWidget {
   @override
@@ -7,7 +9,13 @@ class Game extends StatefulWidget {
 
 class _GameState extends State<Game> {
 
-  void _exibirResultado(){}
+  void _exibirResultado(){
+    Navigator.push(
+        context, 
+        MaterialPageRoute(
+            builder: (context) => Resultado()
+        ));
+  }
 
   @override
   Widget build(BuildContext context) {
